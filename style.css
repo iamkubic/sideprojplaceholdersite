@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #00ffcc;
+  font-family: monospace;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.logo {
+  width: 100px;
+  filter: invert(1);
+}
+
+.glitch-text {
+  font-size: 3em;
+  text-shadow: 1px 1px #ff00ff, -1px -1px #00ffff;
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(2px, -2px); }
+  60% { transform: translate(-1px, 1px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+.socials {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.drop-container {
+  text-align: center;
+  margin-top: 15vh;
+}
+
+.drop-image {
+  max-width: 80%;
+  border: 2px solid #00ffcc;
+}
+
+.drop-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
