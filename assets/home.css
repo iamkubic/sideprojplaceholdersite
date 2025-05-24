@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  margin: 0;
+  background-color: black;
+  color: #00ffcc;
+  font-family: 'Share Tech Mono', monospace;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.socials a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Share Tech Mono', monospace;
+  letter-spacing: 0.1em;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #00cccc;
+}
+
+.logo-wrapper {
+  width: 200px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: none;
+}
+
+.logo {
+  width: 100%;
+  filter: brightness(0) invert(1);
+  display: block;
+  margin-left: auto;
+  filter: brightness(0) invert(1) !important;
+}	
+
+.logo-wrapper {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.animate-logo {
+  animation: logoFadeIn 1.2s ease forwards;
+}
+
+.no-animation {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  transition: none !important;
+}
+
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
